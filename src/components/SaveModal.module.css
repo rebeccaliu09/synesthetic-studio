@@ -1,0 +1,244 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: #0d0d18;
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  color: rgba(232, 228, 222, 0.35);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.closeBtn:hover {
+  color: rgba(232, 228, 222, 0.8);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(232, 228, 222, 0.35);
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  color: #ede9e3;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: rgba(232, 228, 222, 0.25);
+}
+
+.input:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Card preview (also what gets captured) ── */
+
+.card {
+  width: 400px;
+  max-width: 100%;
+  background: #080810;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
+.cardBrand {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(232, 228, 222, 0.22);
+  margin-bottom: 1.5rem;
+}
+
+.cardName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #e8e4de;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.cardDesc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(232, 228, 222, 0.45);
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.cardPalette {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.swatchGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.swatchName {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.06em;
+  color: rgba(232, 228, 222, 0.28);
+}
+
+.cardDivider {
+  width: 100%;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.07);
+  margin: 1rem 0;
+}
+
+.tracksLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(232, 228, 222, 0.28);
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.tracksList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.trackRow {
+  display: grid;
+  grid-template-columns: 1rem 1fr auto;
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.trackNum {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  color: rgba(232, 228, 222, 0.25);
+}
+
+.trackName {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: rgba(232, 228, 222, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackArtist {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 300;
+  color: rgba(232, 228, 222, 0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cardSignature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: rgba(232, 228, 222, 0.4);
+  align-self: flex-end;
+  margin-top: 0.75rem;
+}
+
+/* ── Download button ── */
+
+.downloadBtn {
+  width: 100%;
+  background: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  color: rgba(232, 228, 222, 0.6);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.downloadBtn:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #e8e4de;
+}
+
+.downloadBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.statusMsg {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  color: rgba(232, 228, 222, 0.45);
+  text-align: center;
+}

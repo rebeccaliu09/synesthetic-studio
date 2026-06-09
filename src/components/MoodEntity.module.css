@@ -1,0 +1,110 @@
+.container {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pearl — float */
+@keyframes pearlFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.pearlOrb {
+  animation: pearlFloat 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Moon — sway */
+@keyframes moonSway {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+.moonSway {
+  animation: moonSway 6s ease-in-out infinite;
+  transform-origin: 90px 90px;
+}
+
+/* Chrome — spin */
+@keyframes chromeSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.chromeSpin {
+  animation: chromeSpin 12s linear infinite;
+  transform-origin: 90px 90px;
+}
+
+/* Forest — breathe */
+@keyframes forestBreath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.forestBreath {
+  animation: forestBreath 5s ease-in-out infinite;
+  transform-origin: 90px 90px;
+}
+
+/* Velvet — pulse */
+@keyframes velvetPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+}
+.velvetPulse {
+  animation: velvetPulse 3.5s ease-in-out infinite;
+  transform-origin: 90px 90px;
+}
+
+/* Rose — slow bloom rotation */
+@keyframes roseSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.roseSpin {
+  animation: roseSpin 18s linear infinite;
+  transform-origin: 90px 90px;
+}
+
+/* Flame — flicker fast & irregular */
+@keyframes flameFlicker {
+  0%   { transform: scaleX(1) scaleY(1) translateX(0); }
+  15%  { transform: scaleX(0.96) scaleY(1.04) translateX(2px); }
+  30%  { transform: scaleX(1.03) scaleY(0.97) translateX(-1px); }
+  50%  { transform: scaleX(0.98) scaleY(1.06) translateX(1px); }
+  70%  { transform: scaleX(1.04) scaleY(0.95) translateX(-2px); }
+  85%  { transform: scaleX(0.97) scaleY(1.03) translateX(1px); }
+  100% { transform: scaleX(1) scaleY(1) translateX(0); }
+}
+@keyframes flameFlicker2 {
+  0%   { transform: scaleX(1) translateX(0); opacity: 0.9; }
+  20%  { transform: scaleX(0.92) translateX(-2px); opacity: 0.75; }
+  45%  { transform: scaleX(1.06) translateX(2px); opacity: 0.95; }
+  65%  { transform: scaleX(0.95) translateX(-1px); opacity: 0.8; }
+  100% { transform: scaleX(1) translateX(0); opacity: 0.9; }
+}
+.flameFlicker {
+  animation: flameFlicker 0.9s ease-in-out infinite;
+  transform-origin: 90px 145px;
+}
+.flameFlicker2 {
+  animation: flameFlicker2 0.65s ease-in-out infinite;
+  transform-origin: 90px 130px;
+}
+
+/* Mist — slow drift */
+@keyframes mistDrift1 {
+  0%, 100% { transform: translateX(0) translateY(0); opacity: 0.7; }
+  50% { transform: translateX(6px) translateY(-4px); opacity: 1; }
+}
+@keyframes mistDrift2 {
+  0%, 100% { transform: translateX(0) translateY(0); opacity: 0.8; }
+  50% { transform: translateX(-8px) translateY(5px); opacity: 0.6; }
+}
+@keyframes mistDrift3 {
+  0%, 100% { transform: translateX(0) translateY(0); opacity: 0.7; }
+  50% { transform: translateX(5px) translateY(3px); opacity: 0.9; }
+}
+.mistDrift1 { animation: mistDrift1 7s ease-in-out infinite; }
+.mistDrift2 { animation: mistDrift2 9s ease-in-out infinite; }
+.mistDrift3 { animation: mistDrift3 11s ease-in-out infinite; }

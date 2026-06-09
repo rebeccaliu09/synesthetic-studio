@@ -1,0 +1,80 @@
+.card {
+  max-width: 520px;
+  width: 100%;
+}
+
+.counter {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(232, 228, 222, 0.35);
+  margin-bottom: 1.6rem;
+}
+
+.question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.4rem, 4vw, 1.65rem);
+  font-weight: 300;
+  line-height: 1.35;
+  color: #e8e4de;
+  margin-bottom: 2.4rem;
+}
+
+.options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  padding: 0.95rem 1.2rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.option:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option.selected {
+  border-color: rgba(232, 228, 222, 0.7);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.letter {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: rgba(232, 228, 222, 0.4);
+  min-width: 1rem;
+  flex-shrink: 0;
+}
+
+.label {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: rgba(232, 228, 222, 0.85);
+}
+
+@media (max-width: 480px) {
+  .question {
+    font-size: 1.3rem;
+  }
+}

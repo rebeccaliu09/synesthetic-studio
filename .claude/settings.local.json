@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(read /private/tmp/claude-501/-Users-rebeccaliu-Downloads-synesthetic-studio/0b828f7d-1a01-45da-99c9-1a79c8fc39db/tasks/bz0p5broo.output)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(chromium-cli --session synesthetic)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(pkill -f \"vite\")",
+      "Bash(curl -s -X POST http://localhost:5173/spotify-token -H 'Authorization: Basic __CMDSUB_OUTPUT__')"
+    ]
+  }
+}

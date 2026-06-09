@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --prefix /Users/rebeccaliu/Downloads/synesthetic-studio run dev)"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  background: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  color: #e8e4de;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.btn:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+}
+
+.btn:disabled {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgba(232, 228, 222, 0.5);
+  cursor: default;
+}
+
+.status {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: rgba(232, 228, 222, 0.4);
+  letter-spacing: 0.04em;
+}
