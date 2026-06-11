@@ -118,3 +118,24 @@
   opacity: 0.5;
   cursor: default;
 }
+
+.skipBtn {
+  background: transparent;
+  border: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: rgba(232, 228, 222, 0.3);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  align-self: center;
+}
+
+.skipBtn:hover {
+  color: rgba(232, 228, 222, 0.6);
+  border-bottom-color: rgba(232, 228, 222, 0.3);
+}

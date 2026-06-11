@@ -77,6 +77,14 @@ export default function AuthPage() {
             {loading ? '...' : 'ENTER'}
           </button>
         </form>
+
+        <button
+          className={styles.skipBtn}
+          type="button"
+          onClick={() => navigate(state?.from || '/', { state: state?.resultState })}
+        >
+          Continue without signing in
+        </button>
       </div>
     </div>
   )
